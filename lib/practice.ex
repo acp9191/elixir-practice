@@ -16,10 +16,11 @@ defmodule Practice do
     Practice.Calc.calc(expr)
   end
 
-  def factor(x) do
-    # Maybe delegate this too.
-    [1,2,x]
+  def factor(num) do
+    Practice.Factor.factor(num)
   end
 
-  # TODO: Add a palindrome? function.
+  def is_palindrome(string) do
+    Practice.IsPalindrome.is_palindrome(string)
+  end
 end
